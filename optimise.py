@@ -1,4 +1,4 @@
-import os, os.path, subprocess, json
+import os, os.path, subprocess, json, sys
 
 path = "."
 mydata = [os.path.join(root, name)
