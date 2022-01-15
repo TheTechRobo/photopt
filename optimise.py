@@ -17,7 +17,7 @@ for file in mydata:
         command = "optipng"
     result = subprocess.run([command, file], shell=False, capture_output=True)
     b = os.stat(file).st_size
-    print(a, b)
+    #print(a, b)
     if a <= b:
         continue # wasn't worth it
     results.append([result.stdout.decode('utf-8'), result.stderr.decode('utf-8'), file, a, b])
