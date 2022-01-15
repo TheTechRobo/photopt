@@ -23,3 +23,4 @@ for file in mydata:
     results.append([result.stdout.decode('utf-8'), result.stderr.decode('utf-8'), file, a, b])
 
 print(json.dumps(results))
+if results != []: sys.exit(36)
